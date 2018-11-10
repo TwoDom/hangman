@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Hangman</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h3>Hangman</h3>
+        <div class="result">
+          <!-- <h4>Score</h4> -->
+          <div class="score">
+            <div class="wins">
+              <span>Win</span>
+              <span class="number" id="win">0</span>
+            </div>
+            <div class="losses">
+              <span>Total</span>
+              <span class="number" id="total">0</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="chances-wrapper">
+          <p>Chances: <span id="chances"></span></p>
+        </div>
+        <div id='newGame-wrapper'>
+          <h4>Great job!</h4>
+          <button id='newGame' onclick="prepareGame()">new game</button>
+        </div>
+        <section>
+          <div id="letters"></div>
+          <h5>Choose letter:</h5>
+          <div id="alphabet">
+            <span>a</span>
+            <span>b</span>
+            <span>c</span>
+            <span>d</span>
+            <span>e</span>
+            <span>f</span>
+            <span>g</span>
+            <span>h</span>
+            <span>i</span>
+            <span>j</span>
+            <span>k</span>
+            <span>l</span>
+            <span>m</span>
+            <span>n</span>
+            <span>o</span>
+            <span>p</span>
+            <span>q</span>
+            <span>r</span>
+            <span>s</span>
+            <span>t</span>
+            <span>u</span>
+            <span>v</span>
+            <span>w</span>
+            <span>x</span>
+            <span>y</span>
+            <span>z</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
